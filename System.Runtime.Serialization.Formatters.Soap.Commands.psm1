@@ -58,6 +58,9 @@ function ConvertTo-SoapFile
         [String] $File,
 
         # Hilfebeschreibung zu Param2
+        [Parameter(Mandatory=$true,
+                   ValueFromPipelineByPropertyName=$true,
+                   Position=1)]
         [System.Object]
         $InputObject
     )
